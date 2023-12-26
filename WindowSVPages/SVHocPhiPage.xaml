@@ -1,0 +1,48 @@
+﻿<Page x:Class="QLD_HP_CTH.WindowSVPages.SVHocPhiPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QLD_HP_CTH.WindowSVPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1200"
+      Title="SVHocPhiPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Danh sách học phí từng môn" Margin="10" FontSize="20"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="AntiqueWhite" HorizontalAlignment="Center">
+            <ComboBox Name="cbTrangThai" Width="200" Height="30" SelectedIndex="0" FontSize="15" HorizontalContentAlignment="Center" >
+                <ComboBoxItem>Chưa thanh toán</ComboBoxItem>
+                <ComboBoxItem>Đã thanh toán</ComboBoxItem>
+            </ComboBox>
+            <Button Content="Xem" Height="30" Width="80" Margin="20,0,0,0" Background="White" BorderThickness="1" Click="btnXem_Click"/>
+        </StackPanel>
+        <DataGrid Grid.Row="2" Name="dtgHocPhi" HorizontalAlignment="Center" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên môn học" MinWidth="200"
+                                    Binding="{Binding TenMonHoc}"/>
+                <DataGridTextColumn Header="Mã môn học" MinWidth="200"
+                                    Binding="{Binding MaMonHoc}"/>
+                <DataGridTextColumn Header="Số tín chỉ" MinWidth="200"
+                                    Binding="{Binding SoTinChi}"/>
+                <DataGridTextColumn Header="Số tiền/tín chỉ" MinWidth="200"
+                                    Binding="{Binding SoTienMotTc}"/>
+                <DataGridTextColumn Header="Số tiền/môn" MinWidth="200"
+                                    Binding="{Binding sotienmon}"/>
+                <DataGridTextColumn Header="Trạng thái thanh toán" MinWidth="200"
+                                    Binding="{Binding TrangThaiThanhToan}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Background="AntiqueWhite" HorizontalAlignment="Right" Margin="0,0,10,0">
+            <Label Content="Tổng dư nợ học phí:" FontSize="20" VerticalAlignment="Center"/>
+            <TextBox Name="txtTongNo" MinWidth="100" Height="30" BorderThickness="0" Background="AntiqueWhite" FontSize="20" VerticalAlignment="Center"/>
+            <Label Content="VND" FontSize="20" VerticalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>

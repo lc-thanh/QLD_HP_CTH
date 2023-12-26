@@ -1,0 +1,71 @@
+﻿<Page x:Class="QLD_HP_CTH.WindowAdminPages.QTVMonHoc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QLD_HP_CTH.WindowAdminPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="QTVMonHoc" Background="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--0-->
+        <Label Grid.Row="0" Grid.Column="0" Content="Mã môn học" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Name="txtMa" Grid.Row="0" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30"/>
+        <!--1-->
+        <Label Grid.Row="1" Grid.Column="0" Content="Tên môn học" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Name="txtTen" Grid.Row="1" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30"/>
+        <!--2-->
+        <Label Grid.Row="2" Grid.Column="0" Content="Số tín chỉ" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Name="txtSoTC" Grid.Row="2" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30"/>
+        <!--3-->
+        <Label Grid.Row="3" Grid.Column="0" Content="Số tiền 1 tín chỉ" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Name="txtSoTien" Grid.Row="3" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30"/>
+        <!--4-->
+        <Label Grid.Row="4" Grid.Column="0" Content="Hệ số TX1" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Name="txtTX1" Grid.Row="4" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30"/>
+        <!--5-->
+        <Label Grid.Row="5" Grid.Column="0" Content="Hệ số TX2" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox Name="txtTX2" Grid.Row="5" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30"/>
+        <!--6-->
+        <Label Grid.Row="6" Grid.Column="0" Content="Loại" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <ComboBox Name="cbLoai" Grid.Row="6" Grid.Column='1' VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Height="30" SelectedIndex="0" FontSize="15">
+            <ComboBoxItem>Đại cương</ComboBoxItem>
+            <ComboBoxItem>Chuyên ngành</ComboBoxItem>
+        </ComboBox>
+        <!--7-->
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button Content="Tìm kiếm" Height="30" Width="70" Margin="5" Click="btnTimKiem_Click"/>
+            <Button Content="Thêm" Height="30" Width="70" Margin="5" Click="btnThem_Click"/>
+            <Button Content="Sửa" Height="30" Width="70" Margin="5" Click="btnSua_Click"/>
+            <Button Content="Xóa" Height="30" Width="70" Margin="5" Click="btnXoa_Click"/>
+        </StackPanel>
+        <!--8-->
+        <DataGrid Name="dtgBang" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="0" AutoGenerateColumns="False" SelectedCellsChanged="dtgBang_SelectedCellsChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã môn học" Width="*" Binding="{Binding MaMonHoc}"/>
+                <DataGridTextColumn Header="Tên môn học" Width="*" Binding="{Binding TenMonHoc}"/>
+                <DataGridTextColumn Header="Số tín chỉ" Width="*" Binding="{Binding SoTinChi}"/>
+                <DataGridTextColumn Header="Số tiền 1 tín chỉ" Width="*" Binding="{Binding SoTienMotTc}"/>
+                <DataGridTextColumn Header="Hệ số TX1" Width="*" Binding="{Binding HeSoTx1}"/>
+                <DataGridTextColumn Header="Hệ số TX2" Width="*" Binding="{Binding HeSoTx2}"/>
+                <DataGridTextColumn Header="Loại" Width="*" Binding="{Binding Loai}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

@@ -1,0 +1,8 @@
+C:\Users\thien\OneDrive\Documents\textpublish\QLD_HP_CTH.pdb
+C:\Users\thien\OneDrive\Documents\textpublish\D3DCompiler_47_cor3.dll
+C:\Users\thien\OneDrive\Documents\textpublish\PenImc_cor3.dll
+C:\Users\thien\OneDrive\Documents\textpublish\PresentationNative_cor3.dll
+C:\Users\thien\OneDrive\Documents\textpublish\vcruntime140_cor3.dll
+C:\Users\thien\OneDrive\Documents\textpublish\wpfgfx_cor3.dll
+C:\Users\thien\OneDrive\Documents\textpublish\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\thien\OneDrive\Documents\textpublish\QLD_HP_CTH.exe

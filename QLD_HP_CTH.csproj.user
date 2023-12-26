@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\thien\OneDrive\Documents\TTCSN\QLD_HP_CTH\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AdminLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowAdmin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowAdminPages\QTVBangDiem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowAdminPages\QTVKhoa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowAdminPages\QTVMonHoc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowAdminPages\QTVNganh.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowAdminPages\QTVNganhMon.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowSVPages\SVChiTietPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowSVPages\SVChuyenNganhControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowSVPages\SvDaiCuongControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WindowSVPages\SVKhungPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AdminLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowAdmin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowAdminPages\QTVBangDiem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowAdminPages\QTVKhoa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowAdminPages\QTVMonHoc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowAdminPages\QTVNganh.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowAdminPages\QTVNganhMon.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowSVPages\SVChiTietPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowSVPages\SVChuyenNganhControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowSVPages\SvDaiCuongControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WindowSVPages\SVKhungPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

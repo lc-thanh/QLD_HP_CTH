@@ -1,0 +1,33 @@
+﻿<Window x:Class="QLD_HP_CTH.WindowSV"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLD_HP_CTH"
+        mc:Ignorable="d"
+        Title="WindowSV" Height="450" Width="1400" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!--dong0-->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Background="Purple">
+            <Button Content="Home" Height="30" Width="100" Background="White" BorderThickness="0" Margin="0,0,2,0" Click="btnHome_Click"/>
+            <Button Content="Môn học" Height="30" Width="100" Background="White" BorderThickness="0" Margin="0,0,2,0" Click="btnMonHoc_Click"/>
+            <Button Content="Chương trình đào tạo" Height="30" Width="100" Background="White" BorderThickness="0" Margin="0,0,2,0" Click="btnChuongTrinh_Click"/>
+            <Button Content="Học phí" Height="30" Width="100" Background="White" BorderThickness="0" Margin="0,0,2,0" Click="btnHocPhi_Click"/>
+            <Button Content="Điểm" Height="30" Width="100" Background="White" BorderThickness="0" Margin="0,0,0,0" Click="btnBangDiem_Click"/>
+        </StackPanel>
+        <Border BorderBrush="Purple" BorderThickness="1" Grid.Row="0"/>
+        <!--dong1-->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Background="Blue">
+            <Button Name="btnChiTiet" Content="Chi tiết chương trình đào tạo" Height="30" Width="200" Background="White" BorderThickness="0" Margin="0,0,2,0" Click="btnChiTiet_Click"/>
+            <Button Name="btnKhung" Content="Khung chương trình" Height="30" Width="200" Background="White" BorderThickness="0" Margin="0,0,0,0" Click="btnKhung_Click"/>
+        </StackPanel>
+        <!--dong2-->
+        <Frame Name="Information" Grid.Row="2" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

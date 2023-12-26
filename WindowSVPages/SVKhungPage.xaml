@@ -1,0 +1,19 @@
+﻿<Page x:Class="QLD_HP_CTH.WindowSVPages.SVKhungPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QLD_HP_CTH.WindowSVPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SVKhungPage">
+
+    <Grid Background="White">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="center" Background="Orange">
+            <Button Content="Đại cương" Background="White" BorderThickness="0" Margin="0,0,2,1" Width="100" Click="btnDaiCuong_Click"/>
+            <Button Content="Chuyên ngành" Background="White" BorderThickness="0" Margin="2,0,0,1" Width="100" Click="btnChuyenNganh_Click"/>
+        </StackPanel>
+        <local:SvDaiCuongControl x:Name="UCDaiCuong" Margin="0,20,0,0" Visibility="Collapsed"/>
+        <local:SVChuyenNganhControl x:Name="UCChuyenNganh" Margin="0,20,0,0" Visibility="Collapsed"/>
+    </Grid>
+</Page>
